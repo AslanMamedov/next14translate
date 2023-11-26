@@ -6,6 +6,8 @@ interface TranslateContextProps {
 	dictionary: Dictionary;
 }
 
+type NewDictionary = Pick<Dictionary, 'page'>;
+
 type StrObj = Record<string, unknown>;
 
 type FlattenObjectKeys<T extends StrObj, Key = keyof T> = Key extends string

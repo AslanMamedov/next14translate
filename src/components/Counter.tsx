@@ -20,7 +20,7 @@ const Counter = () => {
 	}, []);
 	return (
 		<div>
-			Counter {count} {t('page.home.description')}
+			Counter {count} {t('page.about.description')}
 			<Number />
 		</div>
 	);
