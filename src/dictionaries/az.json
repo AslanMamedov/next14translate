@@ -1,0 +1,19 @@
+{
+	"navigation": {
+		"home": "Ana seyfe",
+		"about": "Bizim hakta"
+	},
+	"page": {
+		"home": {
+			"title": "Hosgeldin",
+			"description": "Bine"
+		},
+		"about": {
+			"title": "Baki",
+			"description": "Azerbaijan"
+		}
+	},
+	"number": {
+		"one": "bir"
+	}
+}

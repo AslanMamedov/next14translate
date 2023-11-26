@@ -1,0 +1,19 @@
+{
+	"navigation": {
+		"home": "Главная",
+		"about": "О нас"
+	},
+	"page": {
+		"home": {
+			"title": "фывфыв",
+			"description": "фыввфывыфв"
+		},
+		"about": {
+			"title": "Что то ",
+			"description": "Какой то"
+		}
+	},
+	"number": {
+		"one": "Один"
+	}
+}
