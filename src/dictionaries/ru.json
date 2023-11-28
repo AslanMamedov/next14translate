@@ -6,7 +6,10 @@
 	"page": {
 		"home": {
 			"title": "фывфыв",
-			"description": "фыввфывыфв"
+			"description": "фыввфывыфв",
+			"some": {
+				"text": "some text"
+			}
 		},
 		"about": {
 			"title": "Что то ",

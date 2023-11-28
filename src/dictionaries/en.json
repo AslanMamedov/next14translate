@@ -6,7 +6,10 @@
 	"page": {
 		"home": {
 			"title": "Welcome to NextJs i18n",
-			"description": "Internationalization in NextJs 13 App router"
+			"description": "Internationalization in NextJs 13 App router",
+			"some": {
+				"text": "some text"
+			}
 		},
 		"about": {
 			"title": "About Us",

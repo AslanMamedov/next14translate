@@ -6,7 +6,10 @@
 	"page": {
 		"home": {
 			"title": "Hosgeldin",
-			"description": "Bine"
+			"description": "Bine",
+			"some": {
+				"text": "some text"
+			}
 		},
 		"about": {
 			"title": "Baki",

@@ -6,43 +6,48 @@ interface TranslateContextProps {
 	dictionary: Dictionary;
 }
 
-type NewDictionary = Pick<Dictionary, 'page'>;
+type DictionaryKey = keyof Dictionary;
+type PageType<T, Prefix extends string = ''> = {
+	[K in keyof T]: K extends string
+		? K | (T[K] extends Record<string, unknown> ? `${Prefix & string}${K}.${PageType<T[K], `${K}.`>}` : never)
+		: never;
+}[keyof T];
 
-type StrObj = Record<string, unknown>;
+type Path<T> = T extends object ? string : never;
 
-type FlattenObjectKeys<T extends StrObj, Key = keyof T> = Key extends string
-	? T[Key] extends StrObj
-		? `${Key}.${FlattenObjectKeys<T[Key]>}`
-		: `${Key}`
-	: never;
-
-type GetByFlattenKey<T extends StrObj, K extends string> = K extends `${infer K1}.${infer K2}`
-	? T[K1] extends StrObj
-		? GetByFlattenKey<T[K1], K2>
+type GetValue<T, P extends Path<T>> = P extends `${infer K}.${infer Rest}`
+	? K extends keyof T
+		? Rest extends Path<T[K]>
+			? GetValue<T[K], Rest>
+			: never
 		: never
-	: K extends keyof T
-	? T[K]
+	: P extends keyof T
+	? T[P]
 	: never;
 
-type Keys = FlattenObjectKeys<Dictionary>;
+type TS = 'nunber' | 'number';
+type SS = PageType<Dictionary>;
+
+type TypeDictionary = keyof GetValue<Dictionary, 'page.home.some'>;
+const ss: SS = 'number.one';
+// const s: TypeDictionary =
+// type A = keyof GetValue<Dictionary, 'number.one'>;
 
 const translateContext = createContext<TranslateContextProps | undefined>(undefined);
 
-export const useTranslate = () => {
+export const useTranslate = (dictionaryKey: PageType<Dictionary>) => {
 	const context = useContext(translateContext);
-	function dictionary<T extends Keys>(schema: T): GetByFlattenKey<Dictionary, T> {
-		const keys = schema.split('.');
-		let result: StrObj | undefined = context?.dictionary;
-
-		for (const key of keys) {
-			if (result && typeof result === 'object' && key in result) {
-				result = result[key] as StrObj;
-			} else {
-				throw new Error(`Invalid schema: ${schema}`);
-			}
-		}
-
-		return result as GetByFlattenKey<Dictionary, T>;
+	function dictionary(schema: TypeDictionary) {
+		// const keys = schema.split('.');
+		// let result = context?.dictionary[dictionaryKey];
+		// for (const key of keys) {
+		// 	if (result && typeof result === 'object' && key in result) {
+		// 		result = result[key] as StrObj;
+		// 	} else {
+		// 		throw new Error(`Invalid schema: ${schema}`);
+		// 	}
+		// }
+		return '';
 	}
 
 	if (!context) {
@@ -57,3 +62,15 @@ const TranslateProvider: FC<PropsWithChildren<TranslateContextProps>> = ({ dicti
 };
 
 export default TranslateProvider;
+// type StrObj = Record<string, unknown>;
+// type DKeys = keyof Dictionary;
+// type NewDictionary = Pick<Dictionary, DKeys>;
+// type FlattenObjectKeys<T extends StrObj, Key = keyof T> = Key extends string
+// 	? T[Key] extends StrObj
+// 		? `${Key}.${FlattenObjectKeys<T[Key]>}`
+// 		: `${Key}`
+// 	: never;
+
+// type KeyList<T extends NewDictionary, K extends keyof T> = T[K];
+// type KeyListObj<T extends DKeys> = KeyList<NewDictionary, keyof Pick<Dictionary, T>>;
+// type KeyDict<T extends DKeys> = FlattenObjectKeys<KeyListObj<T>>;
