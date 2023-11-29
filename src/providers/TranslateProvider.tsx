@@ -6,10 +6,10 @@ interface TranslateContextProps {
 	dictionary: Dictionary;
 }
 
-type FlattenObjectKeys<T extends StrObj, Key = keyof T> = Key extends string
-	? T[Key] extends StrObj
-		? `${Key}.${FlattenObjectKeys<T[Key]>}`
-		: `${Key}`
+type FlattenObjectKeys<T> = T extends object
+	? T extends infer O
+		? { [K in keyof O]: `${string & K}` | `${K}.${FlattenObjectKeys<O[K]>}` }[keyof O]
+		: never
 	: never;
 
 type PageType<T, Prefix extends string = ''> = {
@@ -42,13 +42,6 @@ type GetValue<T, P> = P extends string
 	? T[P]
 	: never;
 
-
-
-
-
-
-
-
 type GetByFlattenKey<T extends StrObj, K extends string> = K extends `${infer K1}.${infer K2}`
 	? T[K1] extends StrObj
 		? GetByFlattenKey<T[K1], K2>
@@ -57,21 +50,16 @@ type GetByFlattenKey<T extends StrObj, K extends string> = K extends `${infer K1
 	? T[K]
 	: never;
 
-type AAA = GetByFlattenKey<Dictionary, 'page.about.some'>;
- 
-
 type Values = {
-	[P in Unions]:  GetByFlattenKey<Dictionary, 'page.about.some'> ;
-}[Unions];
+	[P in PageType<Dictionary>]: GetByFlattenKey<Dictionary, PageType<Dictionary>>;
+}[PageType<Dictionary>];
 
 type FF = FlattenObjectKeys<Values>;
-// Пример использования
-const value: FF = '';
 
 const translateContext = createContext<TranslateContextProps | undefined>(undefined);
-export const useTranslate = (dictionaryKey: PageType<Dictionary>) => {
+export function useTranslate<T extends PageType<Dictionary>, K extends Dictionary>(dictionaryKey: T) {
 	const context = useContext(translateContext);
-	function dictionary(keys: any) {
+	function dictionary(keys: FlattenObjectKeys<GetValue<K, T>>) {
 		return '';
 	}
 
@@ -80,7 +68,7 @@ export const useTranslate = (dictionaryKey: PageType<Dictionary>) => {
 	}
 
 	return dictionary;
-};
+}
 
 const TranslateProvider: FC<PropsWithChildren<TranslateContextProps>> = ({ dictionary, children }) => {
 	return <translateContext.Provider value={{ dictionary }}>{children}</translateContext.Provider>;

@@ -1,8 +1,8 @@
 import { useTranslate } from '@/providers/TranslateProvider';
 
-const Title = () => {
+const Counter = () => {
 	const t = useTranslate('navigation');
 
-	return <div>{t('home')}</div>;
+	return <div>{t('about')}</div>;
 };
-export default Title;
+export default Counter;
