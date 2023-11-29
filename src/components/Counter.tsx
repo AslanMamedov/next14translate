@@ -1,8 +1,8 @@
 import { useTranslate } from '@/providers/TranslateProvider';
 
 const Counter = () => {
-	const t = useTranslate('about');
+	const t = useTranslate('carousel.item');
 
-	return <div>{t('list.desc_1')}</div>;
+	return <div>{t('desc')}</div>;
 };
 export default Counter;

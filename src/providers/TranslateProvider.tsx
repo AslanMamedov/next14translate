@@ -4,6 +4,7 @@ import { FC, PropsWithChildren, createContext, useContext } from 'react';
 
 interface TranslateContextProps {
 	dictionary: Dictionary;
+	locale: string;
 }
 type StrObj = Record<string, string>;
 
@@ -38,31 +39,37 @@ type Keys<K, T> = FlattenObjectKeys<GetValue<K, T>>;
 const translateContext = createContext<TranslateContextProps | undefined>(undefined);
 export function useTranslate<T extends PageType<Dictionary>, K extends Dictionary>(dictionaryKey: T) {
 	const context = useContext(translateContext);
+
 	function dictionary(keys: Keys<K, T>): string {
 		if (!context) {
 			throw new Error('useTranslate must be used within a TranslateProvider');
 		}
-		const dictionaryKeyLists = dictionaryKey.split('.');
-		const keyLists = keys.split('.');
-		const dictionary = context.dictionary;
-		// console.log(dictionaryKeyLists, keyLists, dictionary);
-		const result = {} as any;
-		for (let i = 0; i < dictionaryKeyLists.length; i++) {
-			result[dictionaryKeyLists[i]] = dictionary[dictionaryKeyLists[i]] as any;
+
+		const keyLists: string[] = `${dictionaryKey}.${keys}`.split('.');
+		let result: any = context.dictionary;
+
+		for (const key of keyLists) {
+			if (result && typeof result === 'object' && key in result) {
+				result = result[key] as StrObj;
+			} else {
+				throw new Error(`Invalid keys: ${keys}`);
+			}
 		}
 
-		return '';
+		return result;
 	}
-
 	if (!context) {
 		throw new Error('useTranslate must be used within a TranslateProvider');
 	}
 
+	if (typeof window !== 'undefined') {
+		localStorage.setItem('locale', context.locale);
+	}
+
 	return dictionary;
 }
-
-const TranslateProvider: FC<PropsWithChildren<TranslateContextProps>> = ({ dictionary, children }) => {
-	return <translateContext.Provider value={{ dictionary }}>{children}</translateContext.Provider>;
+const TranslateProvider: FC<PropsWithChildren<TranslateContextProps>> = ({ locale, dictionary, children }) => {
+	return <translateContext.Provider value={{ dictionary, locale }}>{children}</translateContext.Provider>;
 };
 
 export default TranslateProvider;
