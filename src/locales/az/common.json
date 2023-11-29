@@ -1,0 +1,889 @@
+{
+  "header": {
+    "online_payment" : "Onlayn ödəniş",
+    "products" : "Məhsullar",
+    "back": "Geri",
+    "menu": {
+      "search_placeholder": "Nə axtarırsınız?",
+      "online_payments": "Onlayn ödəniş",
+      "products": "Məhsullar",
+      "faq": "FAQ",
+      "contact": "Əlaqə",
+      "doctor_appointment": "Həkim qəbulu",
+      "check_insurance": "Sığortanın statusunu yoxla",
+      "about_us": "Haqqımızda",
+      "sign_in": "Daxil ol",
+      "bottom_button_for_individual": "Fərdi",
+      "bottom_button_for_companies": "Korporativ",
+      "menu_news_carousel_title_1": "“Xalq Sığorta” ASC-nin Nizamnamə kapitalı 19 iyul 2019-cu il tarixindən etibarən 58 750 500 manat təşkil edir.",
+      "menu_news_carousel_title_2": "Xalq Sığortanın fəaliyyəti əsasında istənilən an müştərilər üçün açıq və rahat olmaq prinsipi durur. İstər məlumat aldıqda, istər xidmət əldə etdikdə, istərsə də sığorta hadisəsi baş verdikdə.",
+      "menu_news_carousel_title_3": "2005-ci ildən başlayaraq “Xalq Sığorta” ASC universal sığorta şirkəti kimi uğurla öz fəaliyyətini həyata keçirir. Şirkətin daxili siyasəti sayəsində biz, sığorta bazarındakı yüksək mövqeyimizi əminliklə qoruyur, ildən ilə müştərilərimizin sayını artırırıq."
+    }
+  },
+
+  "carousel": {
+    "item": {
+      "title": "Fərdi şəxslər üçün həllər",
+      "desc": "Xalq Sığortanın fəaliyyəti əsasında istənilən an müştərilər üçün açıq və rahat olmaq prinsipi durur.",
+      "button": "Online ödəniş"
+    }
+  },
+
+  "footer": {
+    "copyright": "Bütün hüquqlar qorunur © 183.az",
+    "product_of": "Produktu",
+    "call_button": "Zəng et"
+  },
+
+  "insurance": {
+    "auto_insurance": {
+      "title": "Avtomobil Sığortası",
+      "buttons": {
+        "compulsory": "İcbarİ",
+        "casco": "Kasko"
+      },
+      "compulsory": {
+        "title": "Avtonəqliyyat vasitəsi sahiblərinin mülki məsuliyyətinin icbari sığortası",
+        "tabbar": {
+          "buy_now": {
+            "title": "Indi al",
+            "personal_information": {
+              "title": "Ferdi informasiya",
+              "inputs": {
+                "id-sn": {
+                  "placeholder": "Şəxsiyyət vəsiqəsinin seriyası və nömrəsi"
+                },
+                "id-pin": {
+                  "placeholder": "FİN"
+                },
+                "phone": {
+                  "placeholder": "Mobil nömrəniz"
+                },
+                "email": {
+                  "placeholder": "Email"
+                }
+              },
+              "button": "Avtomobilin təfərrüatlarını daxil edin"
+            },
+            "car_information": {
+              "title": "Avtomobil informasiyasi",
+              "inputs": {
+                "registration_certificate": {
+                  "placeholder": "Qeydiyyat şəhadətnaməsi"
+                },
+                "car_number": {
+                  "placeholder": "Dövlət qeydiyyat nişanı"
+                }
+              },
+              "button": "Qiyməti yoxlayın və ödəyin"
+            },
+            "payment": {
+              "title": "Ödəniş",
+              "insurance_sum": "Sığorta məbləği",
+              "discount": "Endirim",
+              "total": "Ümumi",
+              "button_credit_card": "Kredit kartı",
+              "button_payment_terminal": "Ödəniş terminalı"
+            },
+            "download_policy": {
+              "title": "Policy'ni yüklə",
+              "go_to_account": "Hesaba keçin",
+              "note": "* Biz poçtunuza birdəfəlik parol göndərdik, hesabınıza daxil olmaq üçün onu sonra dəyişə bilərsiniz"
+            },
+            "pay_with_terminal": {
+              "title": "Terminal ilə necə ödəmək olar?"
+            }
+          },
+          "pricing": "Qiymət",
+          "check_contract": {
+            "title": "Müqaviləni yoxlayın",
+            "desc": "Check olunanda eger contract varsa haqqında informasiya verecek. Yalnız policy quvvededir. Eger contract varsa və ödəniş olunmayıbsa ödəniş kodunu göstərəcək.",
+            "placeholder": "Contract nomresini daxil edin",
+            "button": "Yoxla"
+          }
+        }
+      },
+      "casco": {
+        "title": "Avtonəqliyyat Vasitələrinin Könüllü Sığortası",
+        "buy_now": {
+          "title": "Indi al",
+          "personal_information": {
+            "title": "Ferdi informasiya",
+            "inputs": {
+              "id_sn": {
+                "placeholder": "Şəxsiyyət vəsiqəsinin seriyası və nömrəsi"
+              },
+              "id_pin": {
+                "placeholder": "FİN"
+              },
+              "phone": {
+                "placeholder": "Mobil nömrəniz"
+              },
+              "email": {
+                "placeholder": "Email"
+              },
+              "count_drive": {
+                "placeholder": "Avtomobili neçə nəfər idarə edir"
+              },
+              "experience_drive": "Sürücülük təcrübəniz"
+            },
+            "button": "Avtomobil informasiyasi"
+          },
+          "car_information": {
+            "title": "Avtomobil informasiyasi",
+            "inputs": {
+              "registration_certificate": {
+                "placeholder": "Qeydiyyat şəhadətnaməsi"
+              },
+              "car_number": {
+                "placeholder": "Dövlət qeydiyyat nişanı"
+              }
+            },
+            "button": "Qiymətləndirmə"
+          },
+          "final": {
+            "desc": "Məlumatlarınz qiymətlənməyə göndərildi Satış təmsilçimiz ən qısa zamanda sizinlə əlaqə saxlayacağıq.",
+            "button": "Hesaba keçin",
+            "note": "* Biz poçtunuza birdəfəlik parol göndərdik, hesabınıza daxil olmaq üçün onu sonra dəyişə bilərsiniz"
+          }
+        },
+        "pricing": "Qiymət",
+        "check_contract": {
+          "title": "Müqaviləni yoxlayın",
+          "desc": "Check olunanda eger contract varsa haqqında informasiya verecek. Yalnız policy quvvededir. Eger contract varsa və ödəniş olunmayıbsa ödəniş kodunu göstərəcək.",
+          "placeholder": "Contract nomresini daxil edin",
+          "button": "Yoxla"
+        }
+      }
+    },
+    "property_insurance": "Əmlak Sığortası",
+    "travel_insurance": "Səyahət Sığortası",
+    "medicine_insurance": "Tibbi Sığorta",
+    "other_insurance": "Digər Məhsullar"
+  },
+
+  "login_forms": {
+    "login": {
+      "title": "Xoş gəlmisiniz",
+      "inputs": {
+        "email": {
+          "label": "Email",
+          "placeholder": "E-poçtu daxil edin"
+        },
+        "password": {
+          "label": "Şifrə",
+          "placeholder": "Şifrəni daxil edin"
+        }
+      },
+      "remind_me": "Məni xatırla",
+      "forgot": "Şifrəmi unutdum",
+      "submit": "Daxil ol",
+      "offer_for_login_text_first": "Hesabınız yoxdur?",
+      "offer_for_login_text_second": "Hesab yaradın"
+    },
+    "register": {
+      "title": "Qeydiyyat",
+      "inputs": {
+        "serial_number": {
+          "label": "Şəxsiyyət vəsiqəsinin seriyası və nömrəsi",
+          "placeholder": "AZE - 12345678"
+        },
+        "fin":{
+          "label": "FİN",
+          "placeholder": "FİN kodu daxil edin"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "E-poçtu daxil edin"
+        },
+        "mobile": {
+          "label": "Mobil nömrə",
+          "placeholder": "+994 50 123 45 78"
+        },
+        "password": {
+          "label": "Şifrə",
+          "placeholder": "Şifrəni daxil edin"
+        },
+        "password_confirm": {
+          "label": "Şifrənin təkrarı",
+          "placeholder": "Şifrəni təkrar daxil edin"
+        }
+      },
+      "remind_me": "Məni xatırla",
+      "forgot": "Şifrəmi unutdum",
+      "submit": "Qeydiyyat",
+      "offer_for_register_text_first": "Hesabınız var?",
+      "offer_for_register_text_second": "Daxil olun"
+    }
+  },
+
+  "dashboard": {
+    "greeting": "Salam",
+    "edit": "Düzəliş et",
+    "logout": "Çıxış",
+    "total": "Ümumi satış",
+    "this_month": "Bu ay",
+    "points": "xal",
+    "my_sales": "Satışlarım",
+    "my_policies": "Müqavilələrim",
+    "sort_by": "Sırala",
+    "insurance_status": {
+      "in_force": "Qüvvədə",
+      "expired": "Vaxtı bitmiş",
+      "to_be_paid": "Ödənilməli"
+    }
+  },
+
+  "online_payment": {
+    "title": "Onlayn ödəniş",
+    "subtitle": "Ödəniş etmək üçün Sığorta şəhadətnaməsinin nömrəsini daxil edin",
+    "with_payment_code": {
+      "title": "Ödəniş etmək üçün Sığorta şəhadətnaməsinin nömrəsini daxil edin",
+      "label": "Şəhadətnamə nömrəsi",
+      "forgot": "Şəhadətnamə nömrəsini unutmusunuz?",
+      "button": "Müqaviləni yoxla"
+    },
+    "forgot": {
+      "title": "Şəhadətnamə nömrəsinin axtarışı",
+      "subtitle": "Şəhadətnamə nömrəsinin axtarışı üçün fərdi məlumatlarınızı yazın",
+      "header": {
+        "personal": "Fiziki şəxs",
+        "corporate": "Hüquqi şəxs"
+      },
+      "body": {
+        "pin": "FİN",
+        "id_number": "Ş.V. Seriya nömrəsi",
+        "voen": "VÖEN"
+      },
+      "button": "Axtar"
+    },
+    "enter_personal_cabinet": {
+      "title": "Şəxsi kabinete daxil ol",
+      "email_label": "Email",
+      "password_label": "Şifrə",
+      "forgot": "Şifrəmi unutdum",
+      "button": "Daxil ol"
+    },
+    "how_to_pay": {
+      "title": "Terminal ilə necə ödəmək olar?",
+      "step_title": "Mərhələ"
+    },
+    "results": {
+      "insured": "Sığortalı",
+      "contract_number": "Şəhadətnamə nömrəsi",
+      "amount": "Ödəniləcək məbləğ",
+      "desc": "* Sığorta müqaviləsinin qüvvəyə minməsi üçün ödəniş tam olunmalıdır",
+      "buttons": {
+        "back": "Назад",
+        "next": "Платить"
+      },
+      "success": {
+        "title": "Uğurlu ödəniş",
+        "label_1": "Şəhadətnamə nömrəsi",
+        "label_2": "Ödənilən məbləğ",
+        "button_print": "Çap et",
+        "button_receipt": "Qəbz"
+      },
+      "error": {
+        "title": "Əməliyyat uğursuz alındı",
+        "desc": "Xahiş edirik yenidən cəhd edin və ya sığorta şirkəti ilə əlaqə saxlayın",
+        "again": "Yenidən cəhd et",
+        "call_center": "183 çağrı mərkəzi"
+      }
+    }
+  },
+
+  "all_products": {
+    "title": "Bütün məhsullar",
+    "tabbar_items": {
+      "transportation": "Nəqliyyat",
+      "property": "Əmlak",
+      "responsibility": "Məsuliyyət",
+      "personal": "Şəxsi"
+    },
+    "sort_by": "Sırala",
+    "button_order": "Sifariş et",
+    "button_buy_online": "Online ödə"
+  },
+
+  "all_news": {
+    "title": "Bütün xəbərlər"
+  },
+  "all_search_results": {
+    "title": "Axtarış nəticələri"
+  },
+
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Ümumi şeylər üçün tez-tez verilən suallara baxın."
+  },
+
+  "contact": {
+    "title": "Əlaqə",
+    "head_office": "Baş Ofis",
+    "subtitle": "Bizə bir mesaj göndərin, tezliklə sizə geri dönəcəyik!",
+    "inputs": {
+      "name": {
+        "label": "Ad soyad"
+      },
+      "email": {
+        "label": "E-poçta adresi"
+      },
+      "phone": {
+        "label": "Telefon nömrəsi"
+      },
+      "notes": {
+        "label": "Şikayətlər və xüsusi qeydlər"
+      }
+    },
+    "button": "Göndər"
+  },
+
+  "doctor_appointment": {
+    "title": "Həkim qəbulu",
+    "inputs": {
+      "name_surname": {
+        "label": "Adı soyadı ata adı"
+      },
+      "birthday": {
+        "label": "Doğum tarixi"
+      },
+      "insurance_card": {
+        "label": "Sığorta kartı"
+      },
+      "pin": {
+        "label": "Fin"
+      },
+      "clinic": {
+        "label": "Klinika"
+      },
+      "phone": {
+        "label": "Əlaqə nömrəsi"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "apply_date": {
+        "label": "Həkimə müraciət tarixi"
+      },
+      "select_clinic": {
+        "label": "Klinikanı seçin"
+      },
+      "notes": {
+        "label": "Şikayətlər və xüsusi qeydlər"
+      }
+    },
+    "button": "Göndər"
+  },
+
+  "about": {
+    "title": "Şirkət haqqında",
+    "phrase_1": "2005-ci ildən başlayaraq \"Xalq Sığorta\" ASC universal sığorta şirkəti kimi uğurla öz fəaliyyətini həyata keçirir. Şirkətin daxili siyasəti sayəsində biz, sığorta bazarındakı yüksək mövqeyimizi əminliklə qoruyur, ildən ilə müştərilərimizin sayını artırırıq.",
+    "phrase_2": "Azərbaycan Respublikası Maliyyə Nazirliyinin 000333 saylı lisenziyasına əsasən Şirkət 20-dən artıq könüllü və 3 icbari sığorta növünü uğurla gerçəkləşdirir.\nXalq Sığorta ASC Azərbaycan sığorta bazarının ən iri iştirakçılarındandır, onun ödənilmiş nizamnamə kapitalı 58 750 500 manat təşkil edir.",
+    "phrase_3": "Çoxşaxəli filial şəbəkəsinin sayəsində Şirkət Azərbaycan Respublikasının bütün ərazisində müştərilərin maraqlarının mühafizəsini təmin edə bilir. Partnyor və müştərilər qarşısında öhdəliklərin vaxtlı vaxtında həyata keçirilməsi sığorta bazarında Şirkətə nüfuzlu ad və hörmət qazandırmışdır ki, yerli və xarici sığorta və təkrarsığorta şirkətləri ilə uzunmüddətli güvənli əməkdaşlıq əlaqələri bunu bir daha sübut edir. ",
+    "subtitle": "Xalq Sığorta aşağıdakılara zəmanət verir:",
+    "list": {
+      "desc_1": "müştəri tələbatlarının təmin edilməsi üçün keyfiyyətli xidmət",
+      "desc_2": "lazımsız təminatlar və əsassız ödəmələr olmadan ən əlverişli sığorta növünün təqdim edilməsi",
+      "desc_3": "sığorta müddəti ərzində mümkün olan sığorta hadisələrinin tənzimlənməsində dəstək və hüquqi məsləhətlər",
+      "desc_4": "növbəti ödəmə haqqında və ya cari sığorta müqaviləsinin müddətinin başa çatması barəsində müştərilərin öncədən xəbərdar edilməsi."
+    },
+    "desc": "Xalq Sığortanın fəaliyyəti əsasında istənilən an müştərilər üçün açıq və rahat olmaq prinsipi durur. İstər məlumat aldıqda, istər xidmət əldə etdikdə, istərsə də sığorta hadisəsi baş verdikdə. Bunun sayəsində müştərilərimiz mümkün risklər haqqında deyil, yalnız öz biznesləri, mənfəət və inkişafları barəsində düşünə bilirlər."
+  },
+
+  "check_insurance": {
+    "description": "Siyasət müqaviləsinin nömrəsini necə yoxlamaq barədə məlumat. Müqavilə nədir? Onu necə tapmaq olar?",
+    "input_label": "Müqavilə nömrəsi",
+    "button": "Yoxla"
+  },
+
+  "insurance_calculator": {
+    "title": "Sığorta kalkulyatoru",
+    "radio_label": "Məhsul seçin",
+    "select_label": "Sığorta növü",
+      "choose": "Seçin",
+    "inputs": {
+      "name": {
+        "label": "Ad soyad"
+      },
+      "email": {
+        "label": "E-poçta"
+      },
+      "phone": {
+        "label": "Əlaqə nömrəsi"
+      },
+      "registration": {
+        "label": "Qeydiyyat ünvanı",
+        "choose": "Şəhəri seçin"
+      }
+    },
+    "button": "Hesabla"
+  },
+
+  "cookie": {
+    "desc": "Saytın sizə daha sürətli xidmət göstərməsi üçün zəhmət olmasa Cookies-i qəbul edin",
+    "button": "Razıyam"
+  },
+
+  "error_pages": {
+    "404": {
+      "title": "404",
+      "desc": "Səhifə tapılmadı",
+      "go_back": "Geri"
+    },
+    "500": {
+      "title": "Opps",
+      "desc": "500 - Daxili server xətası",
+      "go_main": "Ana səhifə",
+      "go_back": "Geri"
+    }
+  },
+
+  "auto-compulsary": {
+    "title": "Avtonəqliyyat vasitəsi sahiblərinin mülki məsuliyyətinin icbari sığortası",
+    "header": {
+      "buy-now": "Onlayn sığorta",
+      "check-contract": "Şəhadətnaməni yoxla"
+    },
+    "check-contract": {
+      "subtitle": "Check olunanda eger contract varsa haqqında informasiya verecek. Yalnız policy quvvededir. Eger contract varsa və ödəniş olunmayıbsa ödəniş kodunu göstərəcək.",
+      "input-label": "Şəhadətnamə nömrəsi",
+      "button": "Yoxla"
+    },
+    "buy_now": {
+      "title": "Avto icbari sığortanın onlayn yaradılması",
+      "subtitle": "Sığorta şəhadətnaməsi yaratmaq üçün aşağıdakı xanaları doldurub Şəhadətnamə yarat düyməsini sıxın.",
+      "inputs": {
+        "id_pin": "Şəxs. vəsiqəsinin FİN-i",
+        "id_serial_number": "Şəxs. vəsiqəsinin seriya və nömrəsi",
+        "car_contract_number": "Avtomobilin şəhadətnamə nömrəsi",
+        "car_number_plate": "Dövlət qeydiyyat nişanı",
+        "mobile_number": "Mobil nömrə",
+        "driving_licence": "Sürücülük vəsiqəsi",
+        "driving_licence_number": "Sürücülük vəsiqəsinin nömrəsi",
+        "email": "E-poçt (yazılması vacib deyil)",
+        "button": "Şəhadətnamə yarat",
+        "yes": "Var",
+        "no": "Yoxdur"
+      }
+    }
+  },
+
+  "property-insurance": {
+    "header": {
+      "step_1": "Sığorta müddəti",
+      "step_2": "Əmlak məlumatları",
+      "step_3": "Sığortalı məlumatları"
+    },
+    "inputs": {
+      "start_date": {
+        "label": "Şəhadətnamənin başlama tarixi"
+      },
+      "blank_series": {
+        "label": "Blankın seriyası"
+      },
+      "blank_number": {
+        "label": "Blankın nömrəsi"
+      },
+      "document_type": {
+        "label": "Əmlak sənədinin növü",
+        "input_1": "Çıxarış",
+        "input_2": "Digər sənəd"
+      },
+      "other_document": {
+        "label": "Digər sənədin nömrəsi"
+      },
+      "registration_number": {
+        "label": "Qeydiyyat nömrəsi"
+      },
+      "property_type": {
+        "label": "Əmlakın növü",
+        "input": "Mənzil"
+      },
+      "city": {
+        "label": "Şəhər"
+      },
+      "post": {
+        "label": "Poçt indeksi"
+      },
+      "address": {
+        "label": "Ünvan",
+        "placeholder": "Ak.Həsən Əliyev küç.24, Bakı, Azərbaycan"
+      },
+      "extract_series": {
+        "label": "Çıxarışın seriyası"
+      },
+      "extract_number": {
+        "label": "Çıxarışın nömrəsi"
+      },
+      "reyestr_number": {
+        "label": "Reyestr nömrəsi"
+      },
+      "insured_type": {
+        "label": "Sığortalının növü",
+        "input_1": "Fiziki şəxs",
+        "input_2": "Hüquqi şəxs"
+      },
+      "pin_code": {
+        "label": "Şəxs. vəsiqəsinin FİN-i"
+      },
+      "series_number": {
+        "label": "Şəxs. vəsiqəsinin seriya və nömrəsi"
+      },
+      "phone": {
+        "label": "Mobil nömrə"
+      },
+      "email": {
+        "label": "E-poçt"
+      },
+      "voen": {
+        "label": "VÖEN"
+      },
+      "general": {
+        "placeholder_select": "Siyahıdan seçin"
+      }
+    },
+    "buttons": {
+      "next": "İrəli",
+      "send": "Göndər"
+    }
+  },
+
+  "form-success": {
+    "title": "Müraciətiniz qeydə alındı",
+    "description": "Əməkdaşlarımız tezliklə sizinlə əlaqə saxlayacaqlar",
+    "home_button": "Ana səhifə"
+  },
+
+  "casco-insurance": {
+    "headers": {
+      "title_1": "Sığorta haqqının hesablanması",
+      "title_2": "Sifarişin qeydiyyatı",
+      "desc_1": "Aşağıdakı xanaları doldurmaqla (seçməklə) KASKO sığorta haqqını hesablaya bilərsiniz",
+      "desc_2": "Xahiş edirik öz əlaqə məlumatlarınızı aşağıdakı xanalara qeyd edin. Əməkdaşımız sizinlə əlaqə saxlayacaq.",
+      "mtpl_title": "Üçüncü şəxslər qarşısında mülki məsuliyyət (MTPL)",
+      "personal_accident_title": "Sürücü və sərnişinlərin fərdi qəza sığortası (Personal Accident)"
+    },
+    "inputs": {
+      "car_plate_number": {
+        "label": "DQN"
+      },
+      "car_estimated_price": {
+        "label": "Avtomobilin bazar qiyməti (AZN)",
+        "placeholder": "MƏS"
+      },
+      "car_brand": {
+        "label": "Marka"
+      },
+      "car_manufactured_year": {
+        "label": "Buraxılış ili"
+      },
+      "driver_experience": {
+        "label": "Sürücülük təcrübəsi"
+      },
+      "driver_count": {
+        "label": "Sürücü sayı"
+      },
+      "damage_history": {
+        "label": "Hadisə tarixçəsi"
+      },
+      "repair_service": {
+        "label": "Təmir servisi",
+        "input_1": "Rəsmi",
+        "input_2": "Qeyri rəsmi",
+        "description": "Rəsmi servis yalnız buraxılış ili 2021 və daha yeni olan avtomobillərə şamil oluna bilər"
+      },
+      "franchise": {
+        "label": "Azadolma (Franşiza)"
+      },
+      "payment": {
+        "label": "Ödəniş"
+      },
+      "mtpl": {
+        "label": "Məsuliyyət həddi"
+      },
+      "personal_accident_limit": {
+        "label": "Məsuliyyət həddi"
+      },
+      "personal_accident_people_count": {
+        "label": "Sərnişin sayı (maksimum 5)"
+      },
+      "full_name": {
+        "label": "Ad və Soyadınız"
+      },
+      "phone": {
+        "label": "Mobil nömrəniz:"
+      }
+    },
+    "general": {
+      "placeholder_select": "Siyahıdan seçin"
+    },
+    "results": {
+      "title": "Hesablama Nəticəsi",
+      "label_id": "Hesablama ID:",
+      "label_tariff": "KASKO Tarifi:",
+      "label_insurance": "KASKO Sığorta Haqqı:",
+      "label_total": "Cəmi:",
+      "label_once": "Ödəniş (Birdəfəlik):"
+    },
+    "buttons": {
+      "step_1": "Hesabla",
+      "step_2": "Sifariş et",
+      "step_3": "Göndər"
+    },
+    "success": {
+      "title": "Sifarişiniz qeydə alındı",
+      "desc": "Əməkdaşlarımız tezliklə sizinlə əlaqə saxlayacaqlar"
+    }
+  },
+
+  "compulsary-insurance": {
+    "headers": {
+      "title_1": "Avto icbari sığortanın onlayn yaradılması",
+      "desc_1": "Sığorta şəhadətnaməsi yaratmaq üçün aşağıdakı xanaları doldurub Şəhadətnamə yarat düyməsini sıxın."
+    },
+    "inputs": {
+      "pin_code": {
+        "label": "Şəxs. vəsiqəsinin FİN-i"
+      },
+      "series_number": {
+        "label": "Şəxs. vəsiqəsinin seriya və nömrəsi"
+      },
+      "certificate_number": {
+        "label": "Avtomobilin şəhadətnamə nömrəsi"
+      },
+      "car_number": {
+        "label": "Dövlət qeydiyyat nişanı"
+      },
+      "license": {
+        "label": "Sürücülük vəsiqəsi",
+        "input_1": "Var",
+        "input_2": "Yoxdur"
+      },
+      "phone": {
+        "label": "Mobil nömrə"
+      },
+      "email": {
+        "label": "E-poçt (yazılması vacib deyil)",
+        "placeholder": "sigortali@epoct.az"
+      }
+    },
+    "success": {
+      "title": "Şəhadətnamə uğurla yaradıldı",
+      "label_1": "Müqavilə nömrəsi",
+      "label_2": "Ödəniş kodu",
+      "label_3": "Ödəniləcək məbləğ",
+      "desc": "Şəhadətnamə ödəniş olunduqdan sonra qüvvəyə minəcək. Ödəniş kodu 48 saat ərzində qüvvədədir",
+      "hop_button": "HÖP-də ödəniş",
+      "online_payment": "Online ödəniş",
+      "terminal_payment": "Terminalda ödəniş"
+    },
+    "failure": {
+      "title": "Əməliyyat uğursuz alındı",
+      "desc": "Xahiş edirik yenidən cəhd edin və ya sığorta şirkəti ilə əlaqə saxlayın",
+      "again": "Yenisini yarat",
+      "call_center": "183 ÇAĞRI MƏRKƏZI"
+    },
+    "popup": {
+      "title": "yönləndirilir...",
+      "desc_1": "Yönlədiriləcəyiniz səhifədə",
+      "desc_2": "Sənədin qeydiyyatı",
+      "desc_3": "düyməsini sıxın."
+    }
+  },
+
+  "travel-insurance": {
+    "header_steps": {
+      "step_1": "Sığorta haqqını hesabla",
+      "step_2": "Şəxsi məlumat",
+      "step_3": "Ümumi baxış",
+      "step_4": "Ödəniş",
+      "step_5": "Sığorta şəhadətnaməsi"
+    },
+    "buttons": {
+      "next": "İrəli"
+    },
+    "step_1": {
+      "title": "Sığorta haqqının hesablanması",
+      "info_panel": {
+        "desc": "Sığorta haqqını hesablamaq üçün müraciət formasını doldurun. Müraciət formasını doldurmaq üçün aşağıdakı sənədlər lazımdır:",
+        "item_1": "Şəxsiyyət vəsiqəsi",
+        "item_2": "Xarici pasport"
+      },
+      "tip_title": "Tip",
+      "covid_title": "COVID-19 təminatı əlavə edilsin?",
+      "main_info_title": "Əsas məlumatlar",
+      "insurance_amount_title": "Sığorta məbləği",
+      "category_title": "Kateqoriya",
+      "passenger_count_title": "Səyahət edənlərin sayı",
+      "discount_title": "Endirim kodu",
+      "travel_duration": "Səyahət müddəti:",
+      "inputs": {
+        "from_date": "Tarixindən",
+        "to_date": "Tarixinədək",
+        "territory": "Ərazi təminatı",
+        "choose": "Siyahıdan seçin",
+        "currency": "Valyuta",
+        "childrenCount": "Uşaqlar < 12 yaş",
+        "adultsCount": "Böyüklər",
+        "aged70_80Count": "Yaşlılar 70-80 yaş",
+        "aged80_85Count": "Yaşlılar 80-85 yaş",
+        "agedMoreThan85Count": "Yaşlılar > 85+ yaş",
+        "ulduzum": {
+          "input": "Ulduzum kodu",
+          "desc_1": "Kodu əldə etmək üçün telefonun ekranından",
+          "desc_2": "*5555#YES",
+          "desc_3": "yığın, smslə ekrana gələn 4 rəqəmli kodu daxil edin.",
+          "last_text_1": "Ulduzum kodunu yalnız BakCell abonentləri əldə edə bilər.",
+          "last_text_2": "Bu xananın doldurulması vacib deyil."
+        }
+      }
+    },
+    "step_2": {
+      "title": "Şəxsi məlumatlar",
+      "insurance_datas": {
+        "label": "Sığorta haqqı:",
+        "az": {
+          "discount": "lik endirim ilə",
+          "day": "gün",
+          "from": "tarixindən",
+          "to": "tarixinədək"
+        },
+        "ru": {
+          "with": "c",
+          "discount": "ной скидкой",
+          "from": "дней с",
+          "to": "до"
+        },
+        "en": {
+          "with": "with",
+          "discount": "discount",
+          "from": "days from",
+          "to": "to"
+        }
+      },
+      "insured_person": "Sığortalı",
+      "travellers": {
+        "title": "Səyahət edənlər",
+        "desc": "Pasportda qeyd edilən formada Latın hərfləri ilə qeyd edin",
+        "instruction": "Təlimat: Passport nömrənizi daxil edərkən seriyasını qeyd edin.",
+        "example": "Nümunə: P1234567 və ya C12345678."
+      },
+      "inputs": {
+        "pin": "FIN",
+        "country": "Ölkə",
+        "country_select": "Ölkə seçin",
+        "name": "Ad",
+        "surname": "Soyad",
+        "father": "Ata adı",
+        "birthdate": "Doğum tarixi",
+        "phone": "Telefon",
+        "email": "E-poçt",
+        "id_series": "Şəxsiyyət vəsiqəsinin seriyası",
+        "id_number": "Şəxsiyyət vəsiqəsinin nömrəsi",
+        "id_number_example": "Ş.V. nömrəsi",
+        "passport": "Passport No"
+      }
+    },
+    "step_3": {
+      "title": "Ümumi baxış",
+      "offer_block": {
+        "title": "Təklif",
+        "inputs": {
+          "insured": "Sığortalı:",
+          "email": "E-poçt:",
+          "phone": "Telefon:",
+          "amount": "Sığorta haqqı:",
+          "amount_lang": {
+            "az": {
+              "text_1": "-lik endirim ilə"
+            },
+            "ru": {
+              "text_1": "c",
+              "text_2": "-ной скидкой"
+            },
+            "en": {
+              "text_1": "with",
+              "text_2": "discount"
+            }
+          }
+        },
+        "details": {
+          "title": "Təsnifatlar",
+          "days": "Günlər:",
+          "duration": "Davamiyyət:",
+          "day": "gün",
+          "type": "Tip:",
+          "category": "Kateqoriya:",
+          "travellers": "Səyahət edənlər:",
+          "person": "nəfər",
+          "territory": "Ərazi təminatı:",
+          "amount": "Sığorta məbləği:",
+          "no": "Xeyr",
+          "yes": "Bəli"
+        }
+      },
+      "travellers_block": {
+        "title": "Səyahət edənlər",
+        "insured": "Sığorta olunan",
+        "passport": "Passport No",
+        "birth": "Doğum tarixi",
+        "amount": "Premium"
+      },
+      "terms_block": {
+        "title": "Səyahət edənlər",
+        "desc": {
+          "text_1": "Hazırkı sığorta şəhadətnaməsi Xalq Sığorta ASC-nin 05.01.2009-cu il tarixli",
+          "text_2": "Səyahət Sığortası qaydalarına",
+          "text_3": "uyğun olaraq rəsmiləşdirilmişdir."
+        },
+        "agree": "Mən qaydalar və şərtlər ilə razıyam",
+        "modal": {
+          "title": "Səyahət sığortası qaydaları",
+          "close": "Bağla",
+          "agree": "Mən qaydalar və şərtlər ilə razıyam"
+        }
+      }
+    },
+    "step_3_success": {
+      "success_text": "Sığorta şəhadətnaməsi uğurla yaradıldı",
+      "payment": {
+        "az": {
+          "text_1": "Şəhadətnamənin (müqavilənin) qüvvəyə minməsi üçün",
+          "text_2": "tarixinədək",
+          "text_3": "ödəniş olunmalıdır"
+        },
+        "en": {
+          "text_1": "For the entry into force of the Policy, necessary to pay",
+          "text_2": "before the",
+          "text_3": "date."
+        },
+        "ru": {
+          "text_1": "Чтобы полис (договор) вступил в силу, необходимо оплатить",
+          "text_2": "до даты"
+        }
+      },
+      "pay_button": "Ödəniş et",
+      "sms_text": {
+        "az": {
+          "text_1": "mobil nömrəsinə ödəniş barədə məlumat göndərildi"
+        },
+        "ru": {
+          "text_1": "Платежная информация отправлена на мобильный номер"
+        },
+        "en": {
+          "text_1": "Payment information was sent to",
+          "text_2": "mobile number"
+        }
+      },
+      "contract_number": "Şəhadətnamə nömrəsi",
+      "new_insurance": "Yeni sığorta əldə et"
+    }
+  },
+
+  "forms": {
+    "your_message": "Mesajınız",
+    "required": "Bu xana vacibdir",
+    "email_error": "Daxil etdiyiniz email formatı düzgün deyil"
+  }
+}

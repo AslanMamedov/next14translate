@@ -7,7 +7,7 @@ import Number from './Number';
 const Counter = () => {
 	const [count, setCount] = useState(0);
 	const idRef = useRef<unknown>();
-	const t = useTranslate('number');
+	const t = useTranslate('page.home.some');
 
 	useEffect(() => {
 		idRef.current = setInterval(() => {
@@ -20,7 +20,7 @@ const Counter = () => {
 	}, []);
 	return (
 		<div>
-			Counter {count} {t('one')}
+			Counter {count} {t('')}
 			<Number />
 		</div>
 	);

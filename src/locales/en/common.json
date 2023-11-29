@@ -1,0 +1,860 @@
+{
+  "header": {
+    "online_payment" : "Online payment",
+    "products" : "Products",
+    "back": "Back",
+    "menu": {
+      "search_placeholder": "What are you looking for?",
+      "online_payments": "Online Payments",
+      "products": "Products",
+      "faq": "FAQ",
+      "contact": "Contacts",
+      "doctor_appointment": "Doctor Appointment",
+      "check_insurance": "Check insurance policy status",
+      "about_us": "About us",
+      "sign_in": "Sign in",
+      "bottom_button_for_individual": "For individuals",
+      "bottom_button_for_companies": "For companies",
+      "menu_news_carousel_title_1": "OJSC Xalg Sigorta is one of the largest insurance market players in Azerbaijan; the paid statutory capital of the Company is 58 750 500 manat.",
+      "menu_news_carousel_title_2": "The insurance company Xalq Sigorta aims to make its business as open and convenient for customers as possible at any time when the customer applies to us — to acquire information, to buy a service, to notify about an insured event.",
+      "menu_news_carousel_title_3": "Open Joint-Stock Company (OJSC) Xalq Sigorta (Khalq Sighorta)  has successfully operated as a universal insurance company in the insurance market since 2005. The internal policy of the Company allows us to maintain a high position in the insurance market, increasing the number of policyholders."
+    }
+  },
+
+  "carousel": {
+    "item": {
+      "title": "Solutions for Individuals",
+      "desc": "The insurance company Xalg Sigorta aims to make its business as open and convenient for customers as possible at any time.",
+      "button": "Online payment"
+    }
+  },
+
+  "footer": {
+    "copyright": "All rights reserved © 183.az",
+    "product_of": "Product of",
+    "call_button": "Call"
+  },
+
+  "insurance": {
+    "auto_insurance": {
+      "title": "Car Insurance",
+      "buttons": {
+        "compulsory": "Compulsory",
+        "casco": "Casco"
+      },
+      "compulsory": {
+        "title": "Compulsory insurance of civil liability of motor vehicle owners",
+        "tabbar": {
+          "buy_now": {
+            "title": "Buy now",
+            "personal_information": {
+              "title": "Personal information",
+              "inputs": {
+                "id-sn": {
+                  "placeholder": "ID card series and number"
+                },
+                "id-pin": {
+                  "placeholder": "PIN"
+                },
+                "phone": {
+                  "placeholder": "Mobile number"
+                },
+                "email": {
+                  "placeholder": "Email"
+                }
+              },
+              "button": "Enter Vehicle details"
+            },
+            "car_information": {
+              "title": "Vehicle information",
+              "inputs": {
+                "registration_certificate": {
+                  "placeholder": "Registration certificate"
+                },
+                "car_number": {
+                  "placeholder": "State registration mark"
+                }
+              },
+              "button": "Check price and pay"
+            },
+            "payment": {
+              "title": "Payment",
+              "insurance_sum": "Insurance amount",
+              "discount": "Sale",
+              "total": "Total",
+              "button_credit_card": "Credit Card",
+              "button_payment_terminal": "Payment terminal"
+            },
+            "download_policy": {
+              "title": "Download Policy",
+              "go_to_account": "Go to account",
+              "note": "* We sent a one time password to your mail you can change it later to access your account"
+            },
+            "pay_with_terminal": {
+              "title": "How to pay with the terminal?"
+            }
+          },
+          "pricing": "Pricing",
+          "check_contract": {
+            "title": "Check contract",
+            "desc": "When checked, if there is a contract, it will give information about it. Only the policy is valid. If there is a contract and payment has not been made, it will show the payment code.",
+            "placeholder": "Enter the contract number",
+            "button": "Check"
+          }
+        }
+      },
+      "casco": {
+        "title": "Voluntary Motor Vehicle Insurance",
+        "buy_now": {
+          "title": "Buy now",
+          "personal_information": {
+            "title": "Personal information",
+            "inputs": {
+              "id_sn": {
+                "placeholder": "ID card series and number"
+              },
+              "id_pin": {
+                "placeholder": "PIN"
+              },
+              "phone": {
+                "placeholder": "Mobile number"
+              },
+              "email": {
+                "placeholder": "Email"
+              },
+              "count_drive": {
+                "placeholder": "How many people drive the car?"
+              },
+              "experience_drive": "Your driving experience"
+            },
+            "button": "Vehicle information"
+          },
+          "car_information": {
+            "title": "Vehicle information",
+            "inputs": {
+              "registration_certificate": {
+                "placeholder": "Registration certificate"
+              },
+              "car_number": {
+                "placeholder": "State registration mark"
+              }
+            },
+            "button": "Evaluation"
+          },
+          "final": {
+            "desc": "Your information has been sent for evaluation. Our sales representative will contact you as soon as possible.",
+            "button": "Go to account",
+            "note": "* We sent a one time password to your mail you can change it later to access your account"
+          }
+        },
+        "pricing": "Pricing",
+        "check_contract": {
+          "title": "Check contract",
+          "desc": "When checked, if there is a contract, it will give information about it. Only the policy is valid. If there is a contract and payment has not been made, it will show the payment code.",
+          "placeholder": "Enter the contract number",
+          "button": "Check"
+        }
+      }
+    },
+    "property_insurance": "Property Insurance",
+    "travel_insurance": "Travel Insurance",
+    "medicine_insurance": "Medical Insurance",
+    "other_insurance": "Other Products"
+  },
+
+  "login_forms": {
+    "login": {
+      "title": "Welcome back",
+      "inputs": {
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter email"
+        },
+        "password": {
+          "label": "Password",
+          "placeholder": "Enter password"
+        }
+      },
+      "remind_me": "Keep me sign in",
+      "forgot": "Forgot Password",
+      "submit": "Sign in",
+      "offer_for_login_text_first": "Don't have an account?",
+      "offer_for_login_text_second": "Create now"
+    },
+    "register": {
+      "title": "Create account",
+      "inputs": {
+        "serial_number": {
+          "label": "ID card series and number",
+          "placeholder": "AZE - 12345678"
+        },
+        "fin":{
+          "label": "PIN",
+          "placeholder": "Enter PIN code"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter email"
+        },
+        "mobile": {
+          "label": "Mobile",
+          "placeholder": "+994 50 123 45 78"
+        },
+        "password": {
+          "label": "Password",
+          "placeholder": "Enter password"
+        },
+        "password_confirm": {
+          "label": "Password confirmation",
+          "placeholder": "Enter confirm password"
+        }
+      },
+      "remind_me": "Keep me sign in",
+      "forgot": "Forgot Password",
+      "submit": "Sign up",
+      "offer_for_register_text_first": "Have an account?",
+      "offer_for_register_text_second": "Sign in"
+    }
+  },
+
+  "dashboard": {
+    "greeting": "Greetings",
+    "edit": "Edit profile",
+    "logout": "Log out",
+    "total": "Total sale",
+    "this_month": "This month",
+    "points": "Points",
+    "my_sales": "My sales",
+    "my_policies": "My policies",
+    "sort_by": "Sort by",
+    "insurance_status": {
+      "in_force": "In force",
+      "expired": "Expired",
+      "to_be_paid": "To be paid"
+    }
+  },
+
+  "online_payment": {
+    "title": "Online Payment",
+    "subtitle": "Enter the number of the Insurance certificate to make payment",
+    "with_payment_code": {
+      "title": "Enter policy number for payment",
+      "label": "Policy number",
+      "forgot": "Forget your policy number?",
+      "button": "Check policy"
+    },
+    "forgot": {
+      "title": "Find policy number",
+      "subtitle": "Enter your personal information to search for the policy number",
+      "header": {
+        "personal": "Physical person",
+        "corporate": "Juridical person"
+      },
+      "body": {
+        "pin": "PIN",
+        "id_number": "ID Series",
+        "voen": "TIN"
+      },
+      "button": "Search"
+    },
+    "enter_personal_cabinet": {
+      "title": "Enter your personal cabinet",
+      "email_label": "Email",
+      "password_label": "Password",
+      "forgot": "Forgot Password",
+      "button": "Login"
+    },
+    "how_to_pay": {
+      "title": "How to pay with the terminal?",
+      "step_title": "Step"
+    },
+    "results": {
+      "insured": "Insured person",
+      "contract_number": "Contract number",
+      "amount": "The amount to be paid",
+      "desc": "* Payment must be made in full for the insurance contract to come into force",
+      "buttons": {
+        "back": "Back",
+        "next": "Pay"
+      },
+      "success": {
+        "title": "Successful payment",
+        "label_1": "Contract number",
+        "label_2": "Amount paid",
+        "button_print": "Print",
+        "button_receipt": "Receipt"
+      },
+      "error": {
+        "title": "The operation failed",
+        "desc": "Please try again or contact your insurance company",
+        "again": "Try again",
+        "call_center": "183 call center"
+      }
+    }
+  },
+
+  "all_products": {
+    "title": "All products",
+    "tabbar_items": {
+      "transportation": "Transportation",
+      "property": "Property",
+      "responsibility": "Məsuliyyət",
+      "personal": "Personal"
+    },
+    "sort_by": "Sort by",
+    "button_order": "Order now",
+    "button_buy_online": "Buy online"
+  },
+
+  "all_news": {
+    "title": "All news"
+  },
+
+  "all_search_results": {
+    "title": "Search results"
+  },
+
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Check FAQ for common things."
+  },
+
+  "contact": {
+    "title": "Contacts",
+    "head_office": "Head office",
+    "subtitle": "Drop us a message, we will back you soon!",
+    "inputs": {
+      "name": {
+        "label": "Name Surname"
+      },
+      "email": {
+        "label": "Email address"
+      },
+      "phone": {
+        "label": "Phone number"
+      },
+      "notes": {
+        "label": "Complaints and special notes"
+      }
+    },
+    "button": "Send"
+  },
+
+  "doctor_appointment": {
+    "title": "Doctor Appointment",
+    "inputs": {
+      "name_surname": {
+        "label": "Name surname ancestor name"
+      },
+      "birthday": {
+        "label": "Date of birth"
+      },
+      "insurance_card": {
+        "label": "Insurance card"
+      },
+      "pin": {
+        "label": "Pin"
+      },
+      "clinic": {
+        "label": "Clinic"
+      },
+      "phone": {
+        "label": "Contact number"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "apply_date": {
+        "label": "Doctor referral date"
+      },
+      "select_clinic": {
+        "label": "Choose your clinic"
+      },
+      "notes": {
+        "label": "Complaints and special notes"
+      }
+    },
+    "button": "Send"
+  },
+
+  "about": {
+    "title": "Company",
+    "phrase_1": "Open Joint-Stock Company (OAО) Xalg Sigorta (Халг Сыгорта) has successfully operated as a universal insurance company in the insurance market since 2005. The internal policy of the Company allows us to maintain a high position in the insurance market, increasing the number of policyholders.",
+    "phrase_2": "According to Licence No.000333, issued by the Ministry of Finance АР, the Company successfully offers over 20 types of optional and 3 types of mandatory insurance. OAО Xalg Sigorta is one of the largest insurance market players in Azerbaijan; the paid statutory capital of the Company is 58 750 500 manat.",
+    "phrase_3": "The branched affiliated network allows the Company to ensure insurance protection of property interests of their customers within the territory of the Republic of Azerbaijan. Meticulous fulfilment of our obligations with partners and customers has granted to us a spotless reputation in the insurance market in Azerbaijan and abroad. This is evidenced by a trustful and long-term cooperation with local and foreign insurance and reinsurance companies.",
+    "subtitle": "We guarantee you:",
+    "list": {
+      "desc_1": "High-quality service aimed at satisfying customers' needs;",
+      "desc_2": "Selection of the optimum insurance offer without forced options and unjustified excess payments;",
+      "desc_3": "Legal consultations and cooperation in relation to settlement of potential insured events during the entire term of insurance;",
+      "desc_4": "We will always remind you of the current payment and termination of the current insurance policy."
+    },
+    "desc": "The insurance company Xalg Sigorta aims to make its business as open and convenient for customers as possible at any time when the customer applies to us — to acquire information, to buy a service, to notify about an insured event. This allows customers to concentrate on their business, taking into account their own benefits and development rather than potential risks."
+  },
+
+  "check_insurance": {
+    "description": "Information about how to check policy contract number. What is contract? How to find it?",
+    "input_label": "Contract number",
+    "button": "Check"
+  },
+
+  "insurance_calculator": {
+    "title": "Insurance Calculator",
+    "radio_label": "Choose product",
+    "select_label": "Insurance type",
+    "choose": "Choose",
+    "inputs": {
+      "name": {
+        "label": "Name surname"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "phone": {
+        "label": "Contact number"
+      },
+      "registration": {
+        "label": "Registration",
+        "choose": "Choose city"
+      }
+    },
+    "button": "Calculate"
+  },
+
+  "cookie": {
+    "desc": "Please accept cookies so that the site can serve you faster",
+    "button": "I agree"
+  },
+
+  "error_pages": {
+    "404": {
+      "title": "404",
+      "desc": "Page not found.",
+      "go_back": "Back"
+    },
+    "500": {
+      "title": "Opps",
+      "desc": "500 - Internal server error",
+      "go_main": "Go to main",
+      "go_back": "Go to back"
+    }
+  },
+
+  "property-insurance": {
+    "header": {
+      "step_1": "Insurance period",
+      "step_2": "Property information",
+      "step_3": "Insured information"
+    },
+    "inputs": {
+      "start_date": {
+        "label": "Certificate start date"
+      },
+      "blank_series": {
+        "label": "Blank's series"
+      },
+      "blank_number": {
+        "label": "Form number"
+      },
+      "document_type": {
+        "label": "Type of property document",
+        "input_1": "Extract",
+        "input_2": "Another document"
+      },
+      "other_document": {
+        "label": "Other document number"
+      },
+      "registration_number": {
+        "label": "Registration number"
+      },
+      "property_type": {
+        "label": "Type of property",
+        "input": "Apartment"
+      },
+      "city": {
+        "label": "City"
+      },
+      "post": {
+        "label": "Postal code"
+      },
+      "address": {
+        "label": "Address",
+        "placeholder": "Ac. Hasan Aliyev str. 24, Baku, Azerbaijan"
+      },
+      "extract_series": {
+        "label": "The series of the extract"
+      },
+      "extract_number": {
+        "label": "Issue number"
+      },
+      "reyestr_number": {
+        "label": "Reyestr number"
+      },
+      "insured_type": {
+        "label": "Type of insured",
+        "input_1": "Individual",
+        "input_2": "Juridical person"
+      },
+      "pin_code": {
+        "label": "PIN code of the ID"
+      },
+      "series_number": {
+        "label": "Series and number of the ID"
+      },
+      "phone": {
+        "label": "Mobile number"
+      },
+      "email": {
+        "label": "Email"
+      },
+      "voen": {
+        "label": "TIN"
+      },
+      "general": {
+        "placeholder_select": "Select from the list"
+      }
+    },
+    "buttons": {
+      "next": "Next",
+      "send": "Send"
+    }
+  },
+
+  "form-success": {
+    "title": "Your request has been registered",
+    "description": "Our staff will contact you soon",
+    "home_button": "Home page"
+  },
+
+  "casco-insurance": {
+    "headers": {
+      "title_1": "Insurance fee calculation",
+      "title_2": "Order registration",
+      "desc_1": "You can calculate the CASKO insurance premium by filling in (selecting) the boxes below",
+      "desc_2": "Please enter your contact information in the boxes below. Our employee will contact you.",
+      "mtpl_title": "Civil liability to third parties (MTPL)",
+      "personal_accident_title": "Personal accident insurance of the driver and passengers (Personal Accident)"
+    },
+    "inputs": {
+      "car_plate_number": {
+        "label": "SRB"
+      },
+      "car_estimated_price": {
+        "label": "Market price of the car (AZN)",
+        "placeholder": "EXAMPLE"
+      },
+      "car_brand": {
+        "label": "Brand"
+      },
+      "car_manufactured_year": {
+        "label": "Manufactured year"
+      },
+      "driver_experience": {
+        "label": "Driving experience"
+      },
+      "driver_count": {
+        "label": "Driver count"
+      },
+      "damage_history": {
+        "label": "Damage History"
+      },
+      "repair_service": {
+        "label": "Repair service",
+        "input_1": "Official",
+        "input_2": "Unofficial",
+        "description": "The official service can only be applied to vehicles manufactured in 2021 and newer"
+      },
+      "franchise": {
+        "label": "Liberation (Franchise)"
+      },
+      "payment": {
+        "label": "Payment"
+      },
+      "mtpl": {
+        "label": "Limitation of liability"
+      },
+      "personal_accident_limit": {
+        "label": "Limitation of liability"
+      },
+      "personal_accident_people_count": {
+        "label": "Number of passengers (maximum 5)"
+      },
+      "full_name": {
+        "label": "Name and surname"
+      },
+      "phone": {
+        "label": "Phone number"
+      }
+    },
+    "general": {
+      "placeholder_select": "Select from the list"
+    },
+    "results": {
+      "title": "Calculation Result",
+      "label_id": "Calculation ID:",
+      "label_tariff": "CASCO Tariff:",
+      "label_insurance": "CASCO Insurance Fee:",
+      "label_total": "Total:",
+      "label_once": "Payment (One Time):"
+    },
+    "buttons": {
+      "step_1": "Calculate",
+      "step_2": "Order",
+      "step_3": "Send"
+    },
+    "success": {
+      "title": "Your order has been registered",
+      "desc": "Our staff will contact you soon"
+    }
+  },
+
+  "compulsary-insurance": {
+    "headers": {
+      "title_1": "Online creation of compulsory auto insurance",
+      "desc_1": "To create an insurance certificate, fill in the fields below and click the Create Certificate button."
+    },
+    "inputs": {
+      "pin_code": {
+        "label": "PIN code of the ID"
+      },
+      "series_number": {
+        "label": "Series and number of the ID"
+      },
+      "certificate_number": {
+        "label": "Vehicle registration number"
+      },
+      "car_number": {
+        "label": "State registration mark"
+      },
+      "license": {
+        "label": "Driving license",
+        "input_1": "Yes",
+        "input_2": "No"
+      },
+      "phone": {
+        "label": "Phone number"
+      },
+      "email": {
+        "label": "Email (optional)",
+        "placeholder": "insured@email.az"
+      }
+    },
+    "success": {
+      "title": "The certificate was created successfully",
+      "label_1": "Contract number",
+      "label_2": "Payment code",
+      "label_3": "The amount to be paid",
+      "desc": "The certificate will be valid after payment. The payment code is valid for 48 hours",
+      "hop_button": "Payment in HOP",
+      "online_payment": "Online payment",
+      "terminal_payment": "Payment at the terminal"
+    },
+    "failure": {
+      "title": "The operation failed",
+      "desc": "Please try again or contact your insurance company",
+      "again": "Сreate new",
+      "call_center": "183 CALL CENTER"
+    },
+    "popup": {
+      "title": "redirecting...",
+      "desc_1": "On the page you will be directed to, click the",
+      "desc_2": "Document registration",
+      "desc_3": "button."
+    }
+  },
+
+  "travel-insurance": {
+    "header_steps": {
+      "step_1": "Price calculation",
+      "step_2": "Personal info",
+      "step_3": "Review",
+      "step_4": "Payment",
+      "step_5": "Insurance Policy"
+    },
+    "buttons": {
+      "next": "Next"
+    },
+    "step_1": {
+      "title": "Calculation of insurance premiums",
+      "info_panel": {
+        "desc": "For the calculation of your insurance premium, please fill in the application. The following documents are required to have your application filed:",
+        "item_1": "Identity card",
+        "item_2": "Foreign passport"
+      },
+      "tip_title": "Type",
+      "covid_title": "Add COVID-19 coverage?",
+      "main_info_title": "General information",
+      "insurance_amount_title": "Sum insured",
+      "category_title": "Category",
+      "passenger_count_title": "Number of persons travelling",
+      "discount_title": "Discount codes",
+      "travel_duration": "Travel duration:",
+      "inputs": {
+        "from_date": "From",
+        "to_date": "To",
+        "territory": "Travel destination",
+        "choose": "Choose from list",
+        "currency": "Currency",
+        "childrenCount": "Children < 12 Yrs",
+        "adultsCount": "Adults",
+        "aged70_80Count": "Seniors > 70 Yrs",
+        "aged80_85Count": "Seniors 80-85 Yrs",
+        "agedMoreThan85Count": "Seniors > 85+ Yrs",
+        "ulduzum": {
+          "input": "Ulduzum code",
+          "desc_1": "To get the code, dial",
+          "desc_2": "*5555#YES",
+          "desc_3": "on the phone screen, enter the 4-digit code that will come to you by SMS.",
+          "last_text_1": "Only BakCell subscribers can get Ulduzum code.",
+          "last_text_2": "This field is not required"
+        }
+      }
+    },
+    "step_2": {
+      "title": "Personal info",
+      "insurance_datas": {
+        "label": "Premium:",
+        "az": {
+          "discount": "lik endirim ilə",
+          "day": "gün",
+          "from": "tarixindən",
+          "to": "tarixinədək"
+        },
+        "ru": {
+          "with": "c",
+          "discount": "ной скидкой",
+          "from": "дней с",
+          "to": "до"
+        },
+        "en": {
+          "with": "with",
+          "discount": "discount",
+          "from": "days from",
+          "to": "to"
+        }
+      },
+      "insured_person": "Insured",
+      "travellers": {
+        "title": "Travellers",
+        "desc": "Enter Latin names as in passport",
+        "instruction": "Instructions: Indicate the series of your passport as you enter the passport number.",
+        "example": "Example: P1234567 or C12345678."
+      },
+      "inputs": {
+        "pin": "PIN",
+        "country": "Country",
+        "country_select": "Choose country",
+        "name": "Name",
+        "surname": "Surname",
+        "father": "Patronymic",
+        "birthdate": "Date of birth",
+        "phone": "Phone",
+        "email": "Email",
+        "id_series": "ID Series",
+        "id_number": "ID Number",
+        "id_number_example": "ID Number",
+        "passport": "Passport No"
+      }
+    },
+    "step_3": {
+      "title": "Review",
+      "offer_block": {
+        "title": "Proposal",
+        "inputs": {
+          "insured": "Insured:",
+          "email": "E-mail:",
+          "phone": "Telephone:",
+          "amount": "Premium:",
+          "amount_lang": {
+            "az": {
+              "text_1": "-lik endirim ilə"
+            },
+            "ru": {
+              "text_1": "c",
+              "text_2": "-ной скидкой"
+            },
+            "en": {
+              "text_1": "with",
+              "text_2": "discount"
+            }
+          }
+        },
+        "details": {
+          "title": "Classifications",
+          "days": "Days:",
+          "duration": "Duration:",
+          "day": "days",
+          "type": "Type:",
+          "category": "Category:",
+          "travellers": "Travellers:",
+          "person": "people",
+          "territory": "Travel destination:",
+          "amount": "Sum insured:",
+          "no": "No",
+          "yes": "Yes"
+        }
+      },
+      "travellers_block": {
+        "title": "Travellers",
+        "insured": "Insured person",
+        "passport": "Passport No",
+        "birth": "Date of birth",
+        "amount": "Premium"
+      },
+      "terms_block": {
+        "title": "Terms",
+        "desc": {
+          "text_1": "Current insurance policy in accordance with",
+          "text_2": "'Travel Insurance' rules",
+          "text_3": "of 'Xalq Insurance' 05.01.2009 dated."
+        },
+        "agree": "I agree with Terms and conditions",
+        "modal": {
+          "title": "Travel Insurance rules",
+          "close": "Close",
+          "agree": "I agree with Terms and conditions"
+        }
+      }
+    },
+    "step_3_success": {
+      "success_text": "The Policy was successfully created",
+      "payment": {
+        "az": {
+          "text_1": "Şəhadətnamənin (müqavilənin) qüvvəyə minməsi üçün",
+          "text_2": "tarixinədək",
+          "text_3": "ödəniş olunmalıdır"
+        },
+        "en": {
+          "text_1": "For the entry into force of the Policy, necessary to pay",
+          "text_2": "before the",
+          "text_3": "date."
+        },
+        "ru": {
+          "text_1": "Чтобы полис (договор) вступил в силу, необходимо оплатить",
+          "text_2": "до даты"
+        }
+      },
+      "pay_button": "Make Payment",
+      "sms_text": {
+        "az": {
+          "text_1": "mobil nömrəsinə ödəniş barədə məlumat göndərildi"
+        },
+        "ru": {
+          "text_1": "Платежная информация отправлена на мобильный номер"
+        },
+        "en": {
+          "text_1": "Payment information was sent to",
+          "text_2": "mobile number"
+        }
+      },
+      "contract_number": "Policy number",
+      "new_insurance": "Buy new policy"
+    }
+  },
+
+  "forms": {
+    "your_message": "Your message",
+    "required": "This field is required",
+    "email_error": "The email format you entered is incorrect"
+  }
+}

@@ -6,14 +6,15 @@ interface TranslateContextProps {
 	dictionary: Dictionary;
 }
 
-type DictionaryKey = keyof Dictionary;
 type PageType<T, Prefix extends string = ''> = {
 	[K in keyof T]: K extends string
-		? K | (T[K] extends Record<string, unknown> ? `${Prefix & string}${K}.${PageType<T[K], `${K}.`>}` : never)
+		? T[K] extends Record<string, unknown>
+			? `${Prefix & string}${K}` | PageType<T[K], `${Prefix & string}${K}.`>
+			: never
 		: never;
 }[keyof T];
 
-type Path<T> = T extends object ? string : never;
+type Path<T> = string & keyof T;
 
 type GetValue<T, P extends Path<T>> = P extends `${infer K}.${infer Rest}`
 	? K extends keyof T
@@ -25,13 +26,12 @@ type GetValue<T, P extends Path<T>> = P extends `${infer K}.${infer Rest}`
 	? T[P]
 	: never;
 
-type TS = 'nunber' | 'number';
-type SS = PageType<Dictionary>;
+type TS = 'page' | 'page.home';
 
-type TypeDictionary = keyof GetValue<Dictionary, 'page.home.some'>;
-const ss: SS = 'number.one';
-// const s: TypeDictionary =
-// type A = keyof GetValue<Dictionary, 'number.one'>;
+type UTL = Path<Dictionary>;
+const test: UTL = 'page';
+
+type TypeDictionary = keyof GetValue<Dictionary, 'page.home.some.about'>;
 
 const translateContext = createContext<TranslateContextProps | undefined>(undefined);
 
