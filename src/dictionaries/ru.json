@@ -1,22 +1,23 @@
 {
 	"navigation": {
-		"home": "Главная",
-		"about": "О нас"
+		"home": "Home",
+		"about": "About"
 	},
 	"page": {
 		"home": {
-			"title": "фывфыв",
-			"description": "фыввфывыфв",
-			"some": {
-				"text": "some text"
-			}
+			"text": "1",
+			"name": "Internationalization in NextJs 13 App router"
 		},
 		"about": {
-			"title": "Что то ",
-			"description": "Какой то"
+			"title": "2",
+			"description": "This is the about page",
+			"some": {
+				"first": "1",
+				"second": "Internationalization in NextJs 13 App router"
+			}
 		}
 	},
 	"number": {
-		"one": "Один"
+		"one": "one"
 	}
 }

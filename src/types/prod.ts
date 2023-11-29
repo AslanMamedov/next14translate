@@ -17,11 +17,10 @@ type PageType<T, Prefix extends string = ''> = {
 		: never;
 }[keyof T];
 
-
-type PageType<T, Prefix extends string = ''> = {
-	[K in keyof T]: K extends string
-		? T[K] extends Record<string, unknown>
-			? `${Prefix & string}${K}` | PageType<T[K], `${Prefix & string}${K}.`>
-			: never
-		: never;
-}[keyof T];
+// type PageType<T, Prefix extends string = ''> = {
+// 	[K in keyof T]: K extends string
+// 		? T[K] extends Record<string, unknown>
+// 			? `${Prefix & string}${K}` | PageType<T[K], `${Prefix & string}${K}.`>
+// 			: never
+// 		: never;
+// }[keyof T];

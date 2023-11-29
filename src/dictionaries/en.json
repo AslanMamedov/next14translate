@@ -5,19 +5,16 @@
 	},
 	"page": {
 		"home": {
-			"title": "Welcome to NextJs i18n",
-			"description": "Internationalization in NextJs 13 App router",
-			"some": {
-				"text": "some text",
-				"about": {
-					"title": "About Us",
-					"description": "This is the about page"
-				}
-			}
+			"text": "1",
+			"name": "Internationalization in NextJs 13 App router"
 		},
 		"about": {
-			"title": "About Us",
-			"description": "This is the about page"
+			"title": "2",
+			"description": "This is the about page",
+			"some": {
+				"first": "1",
+				"second": "Internationalization in NextJs 13 App router"
+			}
 		}
 	},
 	"number": {

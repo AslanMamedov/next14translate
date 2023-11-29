@@ -1,22 +1,23 @@
 {
 	"navigation": {
-		"home": "Ana seyfe",
-		"about": "Bizim hakta"
+		"home": "Home",
+		"about": "About"
 	},
 	"page": {
 		"home": {
-			"title": "Hosgeldin",
-			"description": "Bine",
-			"some": {
-				"text": "some text"
-			}
+			"text": "1",
+			"name": "Internationalization in NextJs 13 App router"
 		},
 		"about": {
-			"title": "Baki",
-			"description": "Azerbaijan"
+			"title": "2",
+			"description": "This is the about page",
+			"some": {
+				"first": "1",
+				"second": "Internationalization in NextJs 13 App router"
+			}
 		}
 	},
 	"number": {
-		"one": "bir"
+		"one": "one"
 	}
 }

@@ -1,69 +1,55 @@
-type PageType<T, Prefix extends string = ''> = {
-	[K in keyof T]: K extends string
-		? T[K] extends Record<string, unknown>
-			? `${Prefix & string}${K}` | PageType<T[K], `${Prefix & string}${K}.`>
-			: never
-		: never;
-}[keyof T];
+// import { Dictionary } from '@/lib/dictionary';
 
-type Path<T> = string & keyof T;
+// type Path<T> = string | number | symbol | (string & keyof T);
 
-type GetValue<T, P extends Path<T>> = P extends `${infer K}.${infer Rest}`
-	? K extends keyof T
-		? Rest extends Path<T[K]>
-			? GetValue<T[K], Rest>
-			: never
-		: never
-	: P extends keyof T
-	? T[P]
-	: never;
+// type GetValue<T, P extends Path<T>> = P extends `${infer K}.${infer Rest}`
+// 	? K extends keyof T
+// 		? Rest extends Path<T[K]>
+// 			? GetValue<T[K], Rest>
+// 			: never
+// 		: never
+// 	: P extends keyof T
+// 	? T[P] extends object
+// 		? GetValue<T[P], keyof T[P]>
+// 		: T[P]
+// 	: never;
+// type TypeDictionary = GetValue<Dictionary, 'page'>;
 
-type pageKeys = 'page.home.title' | 'page.home' | 'page' | 'page.home.content.body';
-
-const page = {
-	home: {
-		title: 'Page Title',
-		content: {
-			body: 'Page Body',
-		},
-	},
+interface Page {
 	about: {
-		history: 'Page History',
-		team: {
-			content: {
-				body: 'Page Body',
-			},
-		},
-	},
-};
+		text: string;
+		name: string;
+	};
+	home: {
+		some: string;
+		about: string;
+	};
+}
+type Path<T> = T extends object ? keyof T | `${keyof T}.${Path<T[keyof T]>}` : never;
 
-type GetNestedProperty<T, K extends string> = K extends `${infer First}.${infer Rest}`
-	? First extends keyof T
-		? GetNestedProperty<T[First], Rest>
+type GetValue<T, P> = P extends string
+	? P extends `${infer K}.${infer Rest}`
+		? K extends keyof T
+			? Rest extends Path<T[K]>
+				? GetValue<T[K], Rest>
+				: never
+			: never
+		: P extends keyof T
+		? T[P]
 		: never
-	: K extends keyof T
-	? T[K]
 	: never;
-type s = GetNestedProperty<typeof page, pageKeys>;
 
-type ExampleType = {
-	page: {
-		home: {
-			title: string;
-			content: {
-				body: string;
-			};
-		};
-	};
-	other: {
-		prop: number;
-	};
-};
+type UnionPage = 'home' | 'about';
+type SS = GetValue<Page, UnionPage>;
 
-type SS = PageType<ExampleType>;
+type KeysUnion<T, Cache extends string[] = []> = T extends object
+	? {
+			[K in keyof T]: K extends string | number
+				? `${K & string}` | `${K & string}.${KeysUnion<T[K], [...Cache, `${K & string}`]>}`
+				: never;
+	  }[keyof T]
+	: never;
 
-type Result1 = GetValue<ExampleType, SS>; // string
-type Result2 = GetValue<ExampleType, 'page.home.content.body'>; // string
-type Result3 = GetValue<ExampleType, 'other.prop'>; // number
-type Result4 = GetValue<ExampleType, 'page.home'>; // { title: string; content: { body: string; } }
-type Result5 = GetValue<ExampleType, 'page'>;
+type UnionType = KeysUnion<Page>;
+
+// type UnionType = 'home.some' | 'home.about' | 'about.text' | 'about.name';
