@@ -5,12 +5,7 @@ import { FC, PropsWithChildren, createContext, useContext } from 'react';
 interface TranslateContextProps {
 	dictionary: Dictionary;
 }
-
-type FlattenObjectKeys<T> = T extends object
-	? T extends infer O
-		? { [K in keyof O]: `${string & K}` | `${K}.${FlattenObjectKeys<O[K]>}` }[keyof O]
-		: never
-	: never;
+type StrObj = Record<string, string>;
 
 type PageType<T, Prefix extends string = ''> = {
 	[K in keyof T]: K extends string
@@ -20,46 +15,42 @@ type PageType<T, Prefix extends string = ''> = {
 		: never;
 }[keyof T];
 
-type Path<T> = T extends object ? keyof T | `${keyof T}.${Path<T[keyof T]>}` : never;
+type Path<T> = string;
 
-type GetValue<T, P> = P extends string
-	? P extends `${infer K}.${infer Rest}`
-		? K extends keyof T
-			? Rest extends Path<T[K]>
-				? GetValue<T[K], Rest>
-				: never
-			: never
-		: P extends keyof T
-		? T[P]
-		: never
-	: P extends `${infer A}.${infer B}`
-	? A extends string
-		? B extends Path<GetValue<T, A>>
-			? GetValue<T, `${A}.${B}`>
+type GetValue<T, P extends Path<T>> = P extends `${infer K}.${infer Rest}`
+	? K extends keyof T
+		? Rest extends Path<T[K]>
+			? GetValue<T[K], Rest>
 			: never
 		: never
 	: P extends keyof T
 	? T[P]
 	: never;
 
-type GetByFlattenKey<T extends StrObj, K extends string> = K extends `${infer K1}.${infer K2}`
-	? T[K1] extends StrObj
-		? GetByFlattenKey<T[K1], K2>
-		: never
-	: K extends keyof T
-	? T[K]
+type FlattenObjectKeys<T extends StrObj, Key = keyof T> = Key extends string
+	? T[Key] extends StrObj
+		? `${Key}.${FlattenObjectKeys<T[Key]>}`
+		: `${Key}`
 	: never;
 
-type Values = {
-	[P in PageType<Dictionary>]: GetByFlattenKey<Dictionary, PageType<Dictionary>>;
-}[PageType<Dictionary>];
-
-type FF = FlattenObjectKeys<Values>;
+type Keys<K, T> = FlattenObjectKeys<GetValue<K, T>>;
 
 const translateContext = createContext<TranslateContextProps | undefined>(undefined);
 export function useTranslate<T extends PageType<Dictionary>, K extends Dictionary>(dictionaryKey: T) {
 	const context = useContext(translateContext);
-	function dictionary(keys: FlattenObjectKeys<GetValue<K, T>>) {
+	function dictionary(keys: Keys<K, T>): string {
+		if (!context) {
+			throw new Error('useTranslate must be used within a TranslateProvider');
+		}
+		const dictionaryKeyLists = dictionaryKey.split('.');
+		const keyLists = keys.split('.');
+		const dictionary = context.dictionary;
+		// console.log(dictionaryKeyLists, keyLists, dictionary);
+		const result = {} as any;
+		for (let i = 0; i < dictionaryKeyLists.length; i++) {
+			result[dictionaryKeyLists[i]] = dictionary[dictionaryKeyLists[i]] as any;
+		}
+
 		return '';
 	}
 
