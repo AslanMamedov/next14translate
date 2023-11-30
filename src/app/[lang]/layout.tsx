@@ -1,4 +1,8 @@
-import './globals.css';
+import './global.css';
+
+import '@mantine/core/styles.css';
+import '@mantine/dates/styles.css';
+
 import type { Metadata } from 'next';
 import { Locale, i18n } from '@/i18n.config';
 import Header from './components/header';
@@ -6,6 +10,8 @@ import Header from './components/header';
 import { Inter } from 'next/font/google';
 import TranslateProvider from '@/providers/TranslateProvider';
 import { getDictionary } from '@/lib/dictionary';
+import MantineProviderss from '@/providers/MantineProviderss';
+import { ColorSchemeScript } from '@mantine/core';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -27,9 +33,13 @@ export default async function RootLayout({
 	const page = await getDictionary(params.lang);
 	return (
 		<html lang={params.lang}>
+			{/* <head>
+				<ColorSchemeScript />
+			</head> */}
 			<body className={inter.className}>
+				<Header lang={params.lang} />
 				<TranslateProvider dictionary={page} locale={params.lang}>
-					{children}
+					<MantineProviderss>{children}</MantineProviderss>
 				</TranslateProvider>
 			</body>
 		</html>

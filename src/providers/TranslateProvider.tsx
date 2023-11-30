@@ -34,18 +34,12 @@ type FlattenObjectKeys<T extends StrObj, Key = keyof T> = Key extends string
 		: `${Key}`
 	: never;
 
-type GetByFlattenKey<T extends StrObj, K extends string> = K extends `${infer K1}.${infer K2}`
-	? T[K1] extends StrObj
-		? GetByFlattenKey<T[K1], K2>
-		: never
-	: K extends keyof T
-	? T[K]
-	: never;
-
 type Keys<K extends Dictionary, T extends PageType<Dictionary>> = FlattenObjectKeys<GetValue<K, T>>;
-type KeyLists = FlattenObjectKeys<Dictionary>;
 const translateContext = createContext<TranslateContextProps | undefined>(undefined);
-export function useTranslate<T extends PageType<Dictionary>, K extends Dictionary>(dictionaryKey?: T) {
+
+export function useTranslate<T extends PageType<Dictionary>, K extends Dictionary>(
+	dictionaryKey?: T
+): [(keys: Keys<K, T>) => string, string] {
 	const context = useContext(translateContext);
 
 	const dictionary = useCallback(
@@ -78,7 +72,7 @@ export function useTranslate<T extends PageType<Dictionary>, K extends Dictionar
 		localStorage.setItem('locale', context.locale);
 	}
 
-	return dictionary;
+	return [dictionary, context.locale];
 }
 const TranslateProvider: FC<PropsWithChildren<TranslateContextProps>> = ({ locale, dictionary, children }) => {
 	return <translateContext.Provider value={{ dictionary, locale }}>{children}</translateContext.Provider>;
