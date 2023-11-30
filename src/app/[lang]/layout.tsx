@@ -28,9 +28,8 @@ export default async function RootLayout({
 	return (
 		<html lang={params.lang}>
 			<body className={inter.className}>
-				<Header lang={params.lang} />
-				<TranslateProvider dictionary={page}>
-					<main>{children}</main>
+				<TranslateProvider dictionary={page} locale={params.lang}>
+					{children}
 				</TranslateProvider>
 			</body>
 		</html>

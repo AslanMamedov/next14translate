@@ -29,7 +29,7 @@ const translateContext = createContext<TranslateContextProps | undefined>(undefi
 
 export const useTranslate = () => {
 	const context = useContext(translateContext);
-	function dictionary<T extends Keys>(schema: T): GetByFlattenKey<Dictionary, T> {
+	function dictionaryWithoutKeys<T extends Keys>(schema: T): GetByFlattenKey<Dictionary, T> {
 		const keys = schema.split('.');
 		let result: StrObj | undefined = context?.dictionary;
 
@@ -50,7 +50,7 @@ export const useTranslate = () => {
 	if (typeof window !== 'undefined') {
 		localStorage.setItem('locale', context.locale);
 	}
-	return dictionary;
+	return dictionaryWithoutKeys;
 };
 
 const TranslateProvider: FC<PropsWithChildren<TranslateContextProps>> = ({ locale, dictionary, children }) => {
