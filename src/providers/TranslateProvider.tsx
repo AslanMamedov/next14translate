@@ -42,27 +42,24 @@ export function useTranslate<T extends PageType<Dictionary>, K extends Dictionar
 ): [(keys: Keys<K, T>) => string, string] {
 	const context = useContext(translateContext);
 
-	const dictionary = useCallback(
-		(keys: Keys<K, T>): string => {
-			if (!context) {
-				throw new Error('useTranslate must be used within a TranslateProvider');
+	const dictionary = (keys: Keys<K, T>): string => {
+		if (!context) {
+			throw new Error('useTranslate must be used within a TranslateProvider');
+		}
+
+		const keyLists: string[] = `${dictionaryKey}.${keys}`.split('.');
+		let result: any = context.dictionary;
+
+		for (const key of keyLists) {
+			if (result && typeof result === 'object' && key in result) {
+				result = result[key] as StrObj;
+			} else {
+				throw new Error(`Invalid keys: ${keys}`);
 			}
+		}
 
-			const keyLists: string[] = `${dictionaryKey}.${keys}`.split('.');
-			let result: any = context.dictionary;
-
-			for (const key of keyLists) {
-				if (result && typeof result === 'object' && key in result) {
-					result = result[key] as StrObj;
-				} else {
-					throw new Error(`Invalid keys: ${keys}`);
-				}
-			}
-
-			return result;
-		},
-		[context, dictionaryKey]
-	);
+		return result;
+	};
 
 	if (!context) {
 		throw new Error('useTranslate must be used within a TranslateProvider');

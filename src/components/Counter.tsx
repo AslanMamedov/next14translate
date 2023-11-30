@@ -6,7 +6,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
 import { FormProvider, useForm } from 'react-hook-form';
 import TextInput from './TextInput';
-const Counter = memo(() => {
+const Counter = () => {
 	const [t, locale] = useTranslate('forms');
 	const shcema = useMemo(() => {
 		const schema = z.object({
@@ -34,9 +34,10 @@ const Counter = memo(() => {
 				<br />
 				<input type="submit" />
 			</form>
+			{t('email_error')}
 		</FormProvider>
 	);
-});
+};
 
 Counter.displayName = 'Counter';
 export default Counter;

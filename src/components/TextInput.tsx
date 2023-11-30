@@ -1,12 +1,12 @@
 'use client';
 
-import { FC, memo } from 'react';
+import { FC } from 'react';
 import { useFormContext } from 'react-hook-form';
 
 interface TextInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 	name: string;
 }
-const TextInput: FC<TextInputProps> = memo(({ name, ...props }) => {
+const TextInput: FC<TextInputProps> = ({ name, ...props }) => {
 	const {
 		register,
 		formState: { errors },
@@ -18,8 +18,6 @@ const TextInput: FC<TextInputProps> = memo(({ name, ...props }) => {
 			{errors[name]?.message && <p>{errors[name]?.message?.toString()}</p>}
 		</>
 	);
-});
-
-TextInput.displayName = 'TextInput';
+};
 
 export default TextInput;

@@ -13,6 +13,25 @@ import dayjs from 'dayjs';
 import { Calendar } from '@mantine/dates';
 import { DatesProvider, MonthPickerInput, DatePickerInput } from '@mantine/dates';
 import { Button } from '@/components/ui/button';
+
+import { atom, useAtom } from 'jotai';
+
+// Create your atoms and derivatives
+const textAtom = atom('hello');
+const uppercaseAtom = atom((get) => get(textAtom).toUpperCase());
+
+// Use them anywhere in your app
+const Input = () => {
+	const [text, setText] = useAtom(textAtom);
+	const handleChange = (e) => setText(e.target.value);
+	return <input value={text} onChange={handleChange} />;
+};
+
+const Uppercase = () => {
+	const [uppercase] = useAtom(uppercaseAtom);
+	return <div>Uppercase: {uppercase}</div>;
+};
+
 export default function Home({ params: { lang } }: { params: { lang: Locale } }) {
 	// const t = useTranslate();
 	const [value, setValue] = useState<Date | null>(null);
@@ -31,13 +50,15 @@ export default function Home({ params: { lang } }: { params: { lang: Locale } })
 				{/* <h1 className="text-3xl font-bold">{t('page.about.description')}</h1>
 				<p className="text-gray-500">{t('page.about.description')}</p> */}
 				<Counter />
+				<Input />
+				<Uppercase />
 				{/* <CustomLink href="main" lang={lang}>
 					Main <Counter />
 				</CustomLink>
 				<CustomLink href="about" lang={lang}>
 					about<Counter />
 				</CustomLink> */}
-				<Button>Click me</Button>
+				{/* <Button>Click me</Button>
 				<Calendar
 					locale={lang}
 					// date={new Date()}
@@ -55,7 +76,7 @@ export default function Home({ params: { lang } }: { params: { lang: Locale } })
 						);
 					}}
 				/>
-				<DateInput clearable locale={lang} label="Date input" placeholder="Date input" />
+				<DateInput clearable locale={lang} label="Date input" placeholder="Date input" /> */}
 			</div>
 		</section>
 	);
