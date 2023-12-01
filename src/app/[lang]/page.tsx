@@ -23,7 +23,7 @@ const uppercaseAtom = atom((get) => get(textAtom).toUpperCase());
 // Use them anywhere in your app
 const Input = () => {
 	const [text, setText] = useAtom(textAtom);
-	const handleChange = (e) => setText(e.target.value);
+	const handleChange = (e: any) => setText(e.target.value);
 	return <input value={text} onChange={handleChange} />;
 };
 
@@ -58,8 +58,7 @@ export default function Home({ params: { lang } }: { params: { lang: Locale } })
 				<CustomLink href="about" lang={lang}>
 					about<Counter />
 				</CustomLink> */}
-				{/* <Button>Click me</Button>
-				<Calendar
+				{/* <Calendar
 					locale={lang}
 					// date={new Date()}
 
@@ -75,8 +74,8 @@ export default function Home({ params: { lang } }: { params: { lang: Locale } })
 							</Indicator>
 						);
 					}}
-				/>
-				<DateInput clearable locale={lang} label="Date input" placeholder="Date input" /> */}
+				/> */}
+				<DateInput clearable locale={lang} label="Date input" placeholder="Date input" />
 			</div>
 		</section>
 	);

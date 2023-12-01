@@ -12,6 +12,7 @@ import TranslateProvider from '@/providers/TranslateProvider';
 import { getDictionary } from '@/lib/dictionary';
 import MantineProviderss from '@/providers/MantineProviderss';
 import { ColorSchemeScript } from '@mantine/core';
+import TansTackQueryProvider from '@/providers/TansTackQueryProvider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -38,9 +39,11 @@ export default async function RootLayout({
 			</head> */}
 			<body className={inter.className}>
 				<Header lang={params.lang} />
-				<TranslateProvider dictionary={page} locale={params.lang}>
-					<MantineProviderss>{children}</MantineProviderss>
-				</TranslateProvider>
+				<TansTackQueryProvider>
+					<TranslateProvider dictionary={page} locale={params.lang}>
+						<MantineProviderss>{children}</MantineProviderss>
+					</TranslateProvider>
+				</TansTackQueryProvider>
 			</body>
 		</html>
 	);
