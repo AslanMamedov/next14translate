@@ -1,6 +1,6 @@
 'use client';
 import { Dictionary } from '@/lib/dictionary';
-import { FC, PropsWithChildren, createContext, useCallback, useContext, useMemo } from 'react';
+import { FC, PropsWithChildren, createContext, useContext } from 'react';
 
 interface TranslateContextProps {
 	dictionary: Dictionary;

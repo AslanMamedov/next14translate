@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-	experimental: {
-		optimizePackageImports: ['@mantine/core', '@mantine/hooks'],
-	},
+	// i18n: {
+	// 	localeDetection: false,
+	// }
 };
 
 module.exports = nextConfig;

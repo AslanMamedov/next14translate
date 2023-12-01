@@ -48,6 +48,10 @@ const Counter = () => {
 			age: text.age,
 			name: text.name,
 		},
+		values: {
+			age: text.age,
+			name: text.name,
+		},
 	});
 
 	const onSubmit = async (data: z.infer<typeof shcema>) => {
@@ -79,7 +83,7 @@ const Counter = () => {
 			}
 		}
 	}, []);
-
+	console.log(data);
 	return (
 		<FormProvider {...methods}>
 			<form onSubmit={methods.handleSubmit(onSubmit)}>

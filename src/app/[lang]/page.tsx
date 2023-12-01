@@ -45,7 +45,7 @@ export default function Home({ params: { lang } }: { params: { lang: Locale } })
 		}
 	};
 	return (
-		<section className="py-24">
+		<section className="py-[150px]">
 			<div className="container">
 				{/* <h1 className="text-3xl font-bold">{t('page.about.description')}</h1>
 				<p className="text-gray-500">{t('page.about.description')}</p> */}
@@ -76,6 +76,14 @@ export default function Home({ params: { lang } }: { params: { lang: Locale } })
 					}}
 				/> */}
 				<DateInput clearable locale={lang} label="Date input" placeholder="Date input" />
+				<div className="border border-red-900m-3 w-screen h-screen p-10">
+					{/* <iframe
+						className="w-[1440px] h-[100px]"
+						src="https://docs.xalqsigorta.az/travel-insurance--iframe.html"
+						frameBorder="0"
+					></iframe> */}
+					1
+				</div>
 			</div>
 		</section>
 	);
